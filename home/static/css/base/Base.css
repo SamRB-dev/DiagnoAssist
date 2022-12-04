@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root {
+    /* Colors */
+    --Orange:#ea7e47;
+    --Green: #00FF00;
+    --Black: #111011;
+    --Red: #ff0000;
+    
+    /* Fonts */
+    --Title: 'Ubuntu', sans-serif;
+    --Subtitle: 'Roboto Condensed', sans-serif;
+}

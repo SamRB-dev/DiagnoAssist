@@ -1,0 +1,46 @@
+@import url('./base/Base.css'); 
+
+* {
+    font-family: var(--Subtitle);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+ 
+.logo a img {
+    width: 15%;
+    outline: var(--Green) 5px solid;
+    border-radius: 50%;
+}
+
+
+.header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1,h2 {
+    font-family: var(--Title);
+}
+
+.header img {
+    width: 6%;
+}
+
+.header h1 {
+    font-size: 6rem;
+}
+
+.brief {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5%;
+}

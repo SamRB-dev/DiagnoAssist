@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DiagnoAssist</title>
+    <link rel="stylesheet" href="{% static 'css/generic.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="{% url 'homepage'%}"><img src="{%static 'assets/logo/logo.svg' %}" alt="logo" /></a>
+      </div>
+      <div class="nav">
+        <div class="navitem"><a href="{% url 'homepage' %}">Homepage</a></div>
+        <div class="navitem"><a href="{% url 'register' %}">Register</a></div>
+        <div class="navitem"><a href="#">Status</a></div>
+        <div class="navitem"><a href="#">About</a></div>
+        <div class="navitem"><a href="#">Github</a></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="img-text">
+        <div class="img">
+          <img src="{% static 'assets/img-1.jpg' %}" alt="Doctor" />
+        </div>
+        <div class="brief">
+          <h2>DiagnoAssist</h2>
+          <p>
+            Your Perfect Assistant For <b>Diagnosis</b> And
+            <b>Decision-making</b>. DiagnoAssist Allows You To Detect Diseases
+            Based On The Symptoms and Medical Screening Reports. Utilizing
+            Various Machine Learning Models, DiagnoAssist Makes Sure Your
+            Diagnosis Is On The Point and Reduces The Chances of Misdiagnosis
+            Which Can Be Fatal For A Patient.
+          </p>
+        </div>
+      </div>
+
+      <div class="register">
+        <a href="{% url 'register' %}">Register</a>
+      </div>
+
+      <div class="tech">
+        <h2>Made With</h2>
+        <div class="icons">
+          <img
+            src="{% static 'assets/icons/html5-original.svg' %}"
+            alt="HTML5"
+          />
+          <img src="{% static 'assets/icons/css3-plain.svg' %}" alt="CSS3" />
+          <img
+            src="{% static 'assets/icons/django-plain.svg' %}"
+            alt="Django"
+          />
+          <img
+            src="{% static 'assets/icons/ml.svg' %}"
+            alt="Machine Learning"
+          />
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="quicklinks">
+        <h2>Quicklinks</h2>
+        <a href="{% url 'homepage' %}" target="_blank">Homepage</a>
+        <a href="{% url 'register' %}" target="_blank">Register</a>
+        <a href="#" target="_blank">About</a>
+      </div>
+
+      <div class="icons">
+        <img src="{% static 'assets/icons/facebook.svg' %}" alt="Facebook" />
+        <img src="{% static 'assets/icons/linkedin.svg' %}" alt="LinkedIn" />
+        <img src="{% static 'assets/icons/youtube.svg' %}" alt="YouTube" />
+        <img src="{% static 'assets/icons/instagram.svg' %}" alt="Insta" />
+        <img src="{% static 'assets/icons/github.svg' %}" alt="Github" />
+      </div>
+    </footer>
+  </body>
+</html>

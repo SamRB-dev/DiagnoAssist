@@ -1,0 +1,73 @@
+@import url('./base/Base.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--Title);
+}
+
+body {
+    margin: 1% 5%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+header a img {
+    width: 20%;
+    outline: var(--Green) 5px solid;
+    border-radius: 50%;
+}
+
+
+main {
+    margin: 15% 0%;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10% 0%;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    outline: none;
+    width: 70%;
+    color: var(--Black);
+    font-size: var(--Subtitle);
+    font-size: 1.2rem;
+    border-radius: 25%;
+    border-color: var(--Green);
+}
+
+input[type='file']{
+    margin-bottom: 3%;
+}
+
+input[type='image'] {
+    margin: 5% 0%;
+    width: 10%;
+}
+
+.label {
+    margin-bottom: 4%;
+}
+
+.files {
+    font-size: 1.8rem;
+    font-weight: 500;
+}

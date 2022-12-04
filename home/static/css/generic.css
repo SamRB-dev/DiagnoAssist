@@ -1,0 +1,128 @@
+@import url('./base/Base.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 5px var(--Green) solid;s */
+    font-family: var(--Subtitle);
+}
+
+a {
+    text-decoration: none;
+    color: var(--Black);
+}
+
+a:hover {
+    color: #fff;
+}
+
+body {
+    margin: 1% 5%;
+}
+
+header, .nav {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    background-color: var(--Orange);
+    color: white;
+}
+
+.logo {
+    width: 30%;
+    color: white;
+}
+
+.logo img {
+    width: 28%;
+}
+
+.nav {
+    justify-content: space-around;
+    width: 70%;
+    font-size: 1.3rem;
+}
+
+.nav .navitem {
+    padding: 2%;
+}
+
+main {
+    margin-top: 10%
+}
+
+.img-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.img {
+    width: 160%;
+    margin-right: 4%;
+}
+.img img {
+    width: 100%;
+    border-radius: 25%;
+}
+
+h2 {
+    font-family: var(--Title);
+}
+
+.register {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.register a {
+    padding: 3% 6%;
+    background-color: var(--Red);
+    font-size: 1.3rem;
+    color: #fff;
+    border-radius: 20%;
+    transition: 
+        background-color 860ms ease-in,
+        color 850ms ease-in;
+}
+
+.register a:hover {
+    background-color: var(--Green);
+    color: var(--Black);
+}
+
+.tech h2 {
+    font-size: 4.5rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons img {
+    width: 7%;
+}
+
+footer {
+    background-color: var(--Black);
+    margin-top: 15%;
+    padding: 3% 10%;
+}
+
+.quicklinks {
+    display: flex;
+    flex-direction: column;
+}
+
+.quicklinks h2,a {
+    color: #fff;
+    margin-bottom: 4%;
+    opacity: 0.7;
+}

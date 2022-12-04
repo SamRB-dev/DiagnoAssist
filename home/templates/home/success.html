@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <link rel="stylesheet" href="{% static 'css/success.css' %}">
+</head>
+<body>
+    <div class="logo">
+        <a href="{% url 'homepage' %}"><img src="{% static 'assets/logo/logo.svg' %}" alt="logo"></a>
+    </div>
+    <div class="header">
+        <img src="{% static 'assets/icons/success.svg' %}" alt="Success">
+        <h1>Success</h1>
+    </div>
+    <div class="brief">
+        <h2>Your Application Has Been Sent For Review</h2>
+        <p>
+            It will take up to 24 hours to review your application. Upon approval, you will gain access to our platform. Please check your status on the <b>Status</b> page after 24 hours.
+        </p>
+    </div>
+</body>
+</html>
