@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.core.files.storage import FileSystemStorage
 from django.views import View
 from . import models
 
@@ -15,7 +16,13 @@ class Registration(View):
     def get(self,request):
         return render(request,'home/register.html')
     def post(self,request):
-        pass
+        name = request.POST['name']
+        dob = request.POST['dob']
+        email = request.POST['email']
+        passwd = request.POST['password']
+        db = models.User(name=name,dob=dob,email=email,password=passwd)
+        db.save()
+        return redirect('success')
 
 class SuccessView(View):
     def get(self,request):

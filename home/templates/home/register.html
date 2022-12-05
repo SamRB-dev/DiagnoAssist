@@ -16,27 +16,16 @@
     </header>
     <main>
       <h2>Registration Form</h2>
-      <form action="" method="post">
+      <form  method="post">
         {% csrf_token %}
         <input type="text" name="name" />
         <label class="label" for="date">Name</label>
         <input type="date" name="dob" required />
         <label class="label" for="date">Date of Birth</label>
         <input type="email" name="email" />
-        <label class="label" for="date">Email</label>
-        <input type="password" for="passwd" />
-        <label class="label" for="date">Password</label>
-        <label class="files" for="picture">Picture</label>
-        <input
-          type="file"
-          name="pic"
-          accept=".jpg, .svg, .png"
-          width="350"
-          height="350"
-          required
-        />
-        <label class="files" for="file">License</label>
-        <input type="file" name="file" accept=".pdf" required />
+        <label class="label" for="email">Email</label>
+        <input type="password" name="password" for="passwd" />
+        <label class="label" for="passwd">Password</label>
         <input
           type="image"
           src="{% static 'assets/icons/registration.svg' %}"
