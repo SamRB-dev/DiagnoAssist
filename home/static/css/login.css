@@ -22,3 +22,32 @@ body {
     outline: var(--Green) 5px solid;
     border-radius: 50%;
 }
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 8% 0%;
+}
+
+input[type='email'], input[type='password'] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    outline: none;
+    width: 70%;
+    color: var(--Black);
+    font-size: var(--Subtitle);
+    font-size: 1.2rem;
+    border-radius: 25%;
+    border-color: var(--Green);
+    margin-top: 5%;
+}
+
+input[type='submit'] {
+    margin-top: 3%;
+    padding: 2% 5%;
+}
+
