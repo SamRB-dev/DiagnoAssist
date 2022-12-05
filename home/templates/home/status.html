@@ -1,14 +1,31 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Status</title>
-
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="{% static 'css/status.css' %}" />
+  </head>
+  <body>
+    <div class="logo">
+      <a href="{% url 'homepage' %}"
+        ><img src="{% static 'assets/logo/logo.svg' %}" alt="logo"
+      /></a>
+    </div>
+    <div class="status">
+        <h1 id="title">Recent Applications by Applicants</h1>
+        {% for person in data %}
+        <div class="person">
+            <h1>{{person.name}}</h1> 
+            <h3>Status: <span>{{person.status}}</span></h3>
+        </div>
+        {% empty %}
+        <div class="empty">
+            No Data Available
+        </div>
+        {% endfor %}
+    </div>
+  </body>
 </html>
